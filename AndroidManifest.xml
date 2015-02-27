@@ -1,0 +1,56 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.android.letscatchup"
+    android:versionCode="1"
+    android:versionName="1.0">
+
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"></uses-permission>
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"></uses-permission>
+     <uses-permission android:name="android.permission.INTERNET"></uses-permission>
+    <uses-permission android:name="android.permission.READ_CONTACTS"></uses-permission>
+    
+     <uses-sdk android:minSdkVersion= "7"     
+       android:targetSdkVersion="17" />
+
+     
+    <application android:icon="@drawable/logo2" android:label="@string/app_name">
+     <uses-library android:name="com.google.android.maps" /> 
+        <activity android:name=".LoginOrRegisterActivity"
+                  android:label="Lets Catchup">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name=".afterLogin"
+        			android:label="Lets Catch Up">
+        </activity>
+        
+        <activity android:name=".LocationBasedServicev3"
+        			android:label="Current location"
+        			android:theme="@android:style/Theme.NoTitleBar" ></activity>
+        
+        <activity android:name=".ScreensActivity"
+        			android:label="Create Account">
+        </activity>
+        
+        <activity android:name=".addContact"
+        			android:label="Add friends">
+        </activity>
+        
+        <activity android:name=".deleteContect"
+        			android:label="Delete friends">
+        </activity>
+        <activity android:name="LetsMap" android:label="mymap"></activity>
+        <activity android:name=".LoginScreen"
+        			android:label="Login Screen">
+        </activity>
+        <activity android:name=".myFriends" android:label="My Friend List">
+            </activity>
+        <activity android:name=".AlertActivity" ></activity>>
+		<activity android:name=".settings" ></activity>
+		<activity android:name=".ProfileLocationActivity" ></activity>
+		<service android:name="com.peepaal.letscatchup.startsending"></service>
+    </application>
+   
+</manifest>

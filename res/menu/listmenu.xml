@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+  xmlns:android="http://schemas.android.com/apk/res/android">
+  <item android:title="Add Profile" android:menuCategory="system" android:id="@+id/addProfile" android:icon="@android:drawable/ic_menu_add">
+    	<menu>
+                        <item android:id="@+id/lb" android:title="Yes" android:icon="@android:drawable/ic_menu_compass" />
+                         <item android:id="@+id/tb" android:title="No" android:icon="@android:drawable/ic_menu_compass" />
+                </menu> 
+                  </item>
+  <item android:title="Manual Mode" android:menuCategory="system" android:id="@+id/manualMode" android:icon="@android:drawable/checkbox_off_background"></item>
+  <item android:title="About" android:menuCategory="system" android:id="@+id/abt" android:icon="@android:drawable/ic_menu_info_details"></item>
+</menu>

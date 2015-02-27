@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="match_parent" android:weightSum="1">
+  
+  
+  	<LinearLayout android:layout_width="fill_parent"
+  				android:layout_height="45dp"
+  				android:orientation="horizontal"
+  				android:background="#E02F20">
+    		<TextView android:layout_marginTop="12dp" android:layout_marginLeft="105dp" android:id="@+id/nearByFriends" android:text="Nearby Friends" android:layout_width="147dp" android:layout_height="30dp"></TextView>    
+    </LinearLayout>
+    
+    <Spinner android:layout_height="wrap_content" android:layout_width="match_parent" android:id="@+id/spinner1" android:layout_weight="0.09" android:layout_marginTop="15dp"></Spinner>
+
+   	<LinearLayout
+   		android:orientation="horizontal"
+  		android:layout_width="match_parent"
+  		android:layout_height="65dp"
+  		android:layout_marginTop="15dp"
+  		android:background="#333333"> 
+    <Button android:layout_weight="0.09" android:layout_height="wrap_content" android:layout_width="100dp" android:id="@+id/inviteButton" android:text="Invite friends" android:layout_marginTop="10dp"></Button>
+    <Button android:layout_weight="0.09" android:layout_height="wrap_content" android:layout_width="100dp" android:id="@+id/exitButton" android:text="Quit" android:layout_marginTop="10dp"></Button>
+    </LinearLayout>
+    
+</LinearLayout>
